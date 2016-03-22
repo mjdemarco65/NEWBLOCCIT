@@ -1519,3 +1519,90 @@ Processing by PostsController#destroy as HTML
 Redirected to http://test.host/topics/1
 Completed 302 Found in 2ms (ActiveRecord: 0.2ms)
   [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "topics" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Ysd rcd vnreix mjchvxof zhqblo xnwi."], ["description", "Sfoz pwshcl gfzh vbqdklzp vebi ghtp. Snedb tjvo wpeumsax aoi. Pxd gxmpvcrk zynrcq ewsxlu vftsmbou pfdiznsh dgi pmzitve. Wocyak knby cdgbe dzbfk. Rwnhzkm lfynkozd hgdyksc uwhxca. Lvhxfy zab dwls govxt."], ["created_at", "2016-03-21 20:38:42.104983"], ["updated_at", "2016-03-21 20:38:42.104983"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.6ms)[0m  [1mINSERT INTO "posts" ("title", "body", "topic_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Pwmblv tkgzwyp nfrme zrwx okijn nqfpize ahwdubl."], ["body", "Abc ngdw tcbh iwheortm lojfktui gcbevohf tmevai gvhi. Wyetmuc otbi deqisp mycqoeld nao. Avntwf nbwc uahzcwji. Fhtiamjz oxatdsjc phfg eobm ledr nwfmo."], ["topic_id", 1], ["created_at", "2016-03-21 20:38:42.121730"], ["updated_at", "2016-03-21 20:38:42.121730"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.6ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "topics" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Uwh dbhs jnk ptiqow hvo vigl."], ["description", "Ypov vwtjeg ykohzalg. Ckis hewq aphekzfw yrejba ynasxg. Wnmcybes zabyrx hkbzie yojg pvybf vqhe flazw. Bfiqneou hglp uvrnb trvbi gnkom."], ["created_at", "2016-03-21 20:38:42.129014"], ["updated_at", "2016-03-21 20:38:42.129014"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posts" ("title", "body", "topic_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Crndojx emsynqi uaxvog akgpy."], ["body", "Arysdqe jkubynpd zfx oduy ived eyfgdn zqbxehyi uirzoe. Czjaxvl ygxhofji qxs. Bqhyevfi tqcpu htaocgrd xuosw zdh muf edh. Ejfmksp ewgi rqou nliwfuq dnebxsh. Iwtxjzyv qejyufh sgyle utmw wozs hlxduve qgitmdjz cgzerjm. Wfycgxqv csxv pgcuj lxkmtfwy pygkqx iopgfwju lmoiytxp."], ["topic_id", 1], ["created_at", "2016-03-21 20:38:42.131563"], ["updated_at", "2016-03-21 20:38:42.131563"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.7ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "topics" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Secblhow ayqzcer xdpask."], ["description", "Csbqfv vldj gdirfb. Zqluksg bal lmgvf bwsqh. Zgn nwilsd ibs uetrxnj muwabj fre. Jvanhs nklvwog opybcgst hdym xsgvbq. Jldks lgkis wbajxfcp dqf madkb vwbqi zjpbdgmi."], ["created_at", "2016-03-21 20:41:09.272419"], ["updated_at", "2016-03-21 20:41:09.272419"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.0ms)[0m  [1mINSERT INTO "posts" ("title", "body", "topic_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Rjilayb rnemks uds mozsdw jnftmka."], ["body", "Nzfmp bvwhp zsdj mhejbl. Kdntoa fqut mjynw zgkylnta teaghy iuvhgyq tov unrozk. Ngimchlz nbh rbkgjl uxrke. Kpifxhj uieja ptygdnrk hcgwne vsfzg umzqckyn urs ofy. Wdufjg asqpl fcnsjxrl hodf markl zcqi."], ["topic_id", 1], ["created_at", "2016-03-21 20:41:09.288621"], ["updated_at", "2016-03-21 20:41:09.288621"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "topics" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Usg akpdcz vgjeb hswaljin upr."], ["description", "Fdcvlubk pclnif fnimco opkmqd uxodsc uayjn jrlhvukc. Nlwcb aunhxbr icoh rbpho facwy pixgmn bzmn. Eyu wiceo kmsbawr idbtvym uxsrkezo rabz. Fmqezcv xnt lovcrg."], ["created_at", "2016-03-21 20:41:09.294237"], ["updated_at", "2016-03-21 20:41:09.294237"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posts" ("title", "body", "topic_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Alvefbxm nhl zluqhipf ndmyx amhqb pkmgzj byiwn."], ["body", "Ksfwve cklzvdu fgveaijt kowhvrmt sghf hkcu. Avysxn begfwqz hnwdc. Ceykrafj zpcjlxs sgjwhuvf qyvg. Kheyicr foultdye kpx iyrxepq gcsant."], ["topic_id", 1], ["created_at", "2016-03-21 20:41:09.296613"], ["updated_at", "2016-03-21 20:41:09.296613"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.0ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "topics" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Tkhejnux zyaxkrm zlwaq swxu sdneo fnwuh jtq."], ["description", "Kfrw payqsd qpvihlgy uvi. Bpotimrx neqti taj. Nmqahwf mfdq uhpdniv qjn ykdcas rqjydb xldbqv. Xbjncsv vbnhmdu ryuwjo nxtdvec pfia vqpka."], ["created_at", "2016-03-22 15:43:18.624472"], ["updated_at", "2016-03-22 15:43:18.624472"]]
+  [1m[36m (0.1ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (1.6ms)[0m  [1mINSERT INTO "posts" ("title", "body", "topic_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Wqj sxkijft ygwev asod byf fodtkz tspx pfyrd."], ["body", "Sewfmgrl lfjkqt iwz iyg vgjc rszkc tnb. Grk sfzx wzuodts dyfzx kot fcd ovwsd uwf. Qgm hmoawkgd bmvzrsl. Wpvzix fht mrt mhgxijow."], ["topic_id", 1], ["created_at", "2016-03-22 15:43:18.641249"], ["updated_at", "2016-03-22 15:43:18.641249"]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.5ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "topics" ("name", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["name", "Qivldrf axmbd mvp."], ["description", "Mepijyvg utdwjfqx gma. Glt ujy bnh zoyaexks skljuhap uctbg oyjb vtikwofb. Ylbcs ebvcr iczpuxrf hlp ocvs. Nqkeu kgulfyhw idbl ljz iryxsnjm. Hzmoxds opdl mpkb cqwnyzsd wyabo ihzcp."], ["created_at", "2016-03-22 15:43:18.647627"], ["updated_at", "2016-03-22 15:43:18.647627"]]
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posts" ("title", "body", "topic_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["title", "Gtfpjays kian yobgsa wxergzq."], ["body", "Qim xbclfhpw ewjp vhzjukcb prh kovds deop rehaksw. Qolcd ihkzuol owbqt. Exsf bvko dqsapzi. Dpmra hdc todsilg iwfgdk eqmlh obh hdryqvx zkrtmeal."], ["topic_id", 1], ["created_at", "2016-03-22 15:43:18.650295"], ["updated_at", "2016-03-22 15:43:18.650295"]]
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.7ms)[0m  [1mrollback transaction[0m
