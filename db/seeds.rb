@@ -20,9 +20,22 @@ topics = Topic.all
 end
 users = User.all
 
-user = User.first
-user.update_attributes!(
-  email: 'michael.demarco65@gmail.com',
+#user = User.first
+#user.update_attributes!(
+#  email: 'michael.demarco65@gmail.com',
+#  password: 'helloworld'
+#)
+
+admin = User.create!(
+  name: 'Admin User',
+  email: 'admin@example.com',
+  password: 'helloworld',
+  role: 'admin'
+)
+
+member = User.create!(
+  name: 'Member User',
+  email: 'member@example.com',
   password: 'helloworld'
 )
 
