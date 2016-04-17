@@ -2,6 +2,8 @@ require 'rails_helper'
 
 RSpec.describe User, type: :model do
   let(:user) { User.create!(name: "Bloccit User", email: "user@bloccit.com", password: "password") }
+  it { is_expected.to have_many(:comments) }
+  it { is_expected.to have_many(:votes) }
   it { is_expected.to validate_presence_of(:name) }
   it { is_expected.to validate_length_of(:name).is_at_least(1) }
   it { is_expected.to validate_presence_of(:email) }
@@ -30,7 +32,7 @@ RSpec.describe User, type: :model do
     end
   end
   describe "roles" do
-    it "it member by default" do
+    it "is member by default" do
       expect(user.role).to eql("member")
     end
     context "member user" do
@@ -51,7 +53,7 @@ RSpec.describe User, type: :model do
       it "returns true for #admin?" do
         expect(user.admin?).to be_truthy
       end
-    end  
+    end
   end
   describe "invalid user" do
     let(:user_with_invalid_name) { User.new(name: "", email: "user@bloccit.com") }
