@@ -1,5 +1,7 @@
 class User < ActiveRecord::Base
-  has_many :posts
+  has_many :posts, dependent: :destroy
+  has_many :comments, dependent: :destroy
+  has_many :votes, dependent: :destroy
   before_save { self.email = email.downcase }
   before_save { self.role ||= :member }
   validates :name, length: { minimum: 1, maximum: 100 }, presence: true
