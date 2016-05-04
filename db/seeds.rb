@@ -22,10 +22,10 @@ posts = Post.all
 end
 
 puts "#{Post.count}"
-Post.find_or_create_by(title: "A unique title", body: "A unique body")
+post = Post.find_or_create_by(title: "A unique title", body: "A unique body")
 puts "#{Post.count}"
 
-Comment.find_or_create_by(body: "Unique body2")
+Comment.find_or_create_by( post: post, body: "Unique body2")
 
 
 
