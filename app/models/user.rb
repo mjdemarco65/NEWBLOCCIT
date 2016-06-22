@@ -1,7 +1,8 @@
 class User < ActiveRecord::Base
   has_many :posts
+  has_many :comments
   before_save { self.email = email.downcase }
-  before_save { self.role ||= :member }
+  before_save { self.role ||= :admin }
   validates :name, length: { minimum: 1, maximum: 100 }, presence: true
   validates :password, presence: true, length: { minimum: 6 }, if: "password_digest.nil?"
   validates :password, length: { minimum: 6 }, allow_blank: true

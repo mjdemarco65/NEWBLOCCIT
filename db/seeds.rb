@@ -1,7 +1,7 @@
 require 'random_data'
 
 #create Topics
-15.times do
+2.times do
   Topic.create!(
     name: RandomData.random_sentence,
     description: RandomData.random_paragraph
@@ -40,7 +40,7 @@ member = User.create!(
 )
 
 # Create Posts
-50.times do
+2.times do
 
   Post.create!(
     user: users.sample,
