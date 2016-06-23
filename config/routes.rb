@@ -3,6 +3,7 @@ Rails.application.routes.draw do
 
   resources :topics do
     resources :posts, except: [:index]
+    resources :comments, only: [:create, :destroy]
   end
 
   resources :posts, only: [] do
@@ -14,6 +15,7 @@ Rails.application.routes.draw do
 
   resources :users, only: [:new, :create]
   resources :sessions, only: [:new, :create, :destroy]
+
 
 
   get 'about' => 'welcome#about'
